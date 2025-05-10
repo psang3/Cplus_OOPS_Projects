@@ -3,9 +3,10 @@
 
 #include <string>
 #include <vector>
+#include "MenuItem.hpp"
 using namespace std;
 
-class Restaurant {
+class Restaurant  {
    private:
    string name;
    string address;
@@ -15,6 +16,10 @@ class Restaurant {
 
    void displayInfo();
    void describeCuisine();
+
+   protected:
+   vector<MenuItem> menu;
+
 };
 
 #endif

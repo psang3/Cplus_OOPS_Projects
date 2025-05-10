@@ -3,7 +3,13 @@
 
 #include "Restaurant.hpp"
 
-class JapaneseRestaurant {
+class JapaneseRestaurant : virtual public Restaurant {
+  private:
+  bool hasTatami;
+  public:
+  JapaneseRestaurant(string name, string addr, bool tatamiAvailable) : Restaurant(name, addr), hasTatami(tatamiAvailable){}
+
+  void describeCuisine();
 };
 
 #endif

@@ -5,7 +5,11 @@
 #include "JapaneseRestaurant.hpp"
 #include "Restaurant.hpp"
 
-class MexicanJapaneseFusion {
-};
+class MexicanJapaneseFusion : public MexicanRestaurant,JapaneseRestaurant{
+  public:
+ MexicanJapaneseFusion(string name, string addr, bool tatamiAvailable, int spceLevel);
 
+ void describeCuisine();
+ void displaySpeciality();
+};
 #endif
